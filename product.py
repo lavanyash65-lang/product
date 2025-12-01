@@ -1,15 +1,16 @@
-
-def product_details(id, name, quantity,price):
-    result = (
-        f"Employee Name: {id}\n "
-        f"Employee ID: {name}\n "
-        f"Department: {quantity}\n "
-        f"Salary: {price}"
+def product_info(product_id, name, quantity, price):
+    return (
+        f"Product ID: {product_id}\n"
+        f"Name: {name}\n"
+        f"Quantity: {quantity}\n"
+        f"Price: {price}"
     )
-    return result
-if __name__ == "__main__":
-    id = "E1001"
-    name = "alice"
-    quantity = 2
-    price = 50000
-    print(product_details(id, name, quantity, price))
+
+if name == "main":
+    product_id = "P102"
+    name = "Keyboard"
+    quantity = 5
+    price = 799.50
+
+    print("Product Details:\n")
+    print(product_info(product_id, name, quantity, price))
